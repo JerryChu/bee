@@ -1,7 +1,7 @@
 <view class="custom-navigation" style="width: {{ menuButtonBoundingClientRect.left }}px;height: {{ menuButtonBoundingClientRect.height + menuButtonBoundingClientRect.top }}px;padding-top: {{ menuButtonBoundingClientRect.top }}px;line-height: {{ menuButtonBoundingClientRect.height }}px;">
-  <view wx:if="{{ language }}" class="language">
+  <!-- <view wx:if="{{ language }}" class="language">
     <image class="language-icon" src="/images/lang/{{language}}.png" mode="aspectFill" bind:tap="changeLang"></image>
-  </view>
+  </view> -->
   <view class="mallName">{{ mallName }}</view>
 </view>
 <view wx:if="{{noticeLastOne}}" class="notice">

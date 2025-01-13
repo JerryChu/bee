@@ -29,24 +29,24 @@ function setTabBarLanguage(){
     text: $t.index.order
   })
 
+  // wx.setTabBarItem({
+  //   index: 1,
+  //   pagePath: "pages/queue/index",
+  //   iconPath: "images/nav/qh-off.png",
+  //   selectedIconPath: "images/nav/qh-on.png",
+  //   text: $t.queue.t
+  // })
+
+  // wx.setTabBarItem({
+  //   index: 2,
+  //   pagePath: "pages/order-details/doing",
+  //   iconPath: "images/nav/qc-off.png",
+  //   selectedIconPath: "images/nav/qc-on.png",
+  //   text: $t.index.PickingUp
+  // })
+
   wx.setTabBarItem({
     index: 1,
-    pagePath: "pages/queue/index",
-    iconPath: "images/nav/qh-off.png",
-    selectedIconPath: "images/nav/qh-on.png",
-    text: $t.queue.t
-  })
-
-  wx.setTabBarItem({
-    index: 2,
-    pagePath: "pages/order-details/doing",
-    iconPath: "images/nav/qc-off.png",
-    selectedIconPath: "images/nav/qc-on.png",
-    text: $t.index.PickingUp
-  })
-
-  wx.setTabBarItem({
-    index: 3,
     pagePath: "pages/my/index",
     iconPath: "images/nav/my-off.png",
     selectedIconPath: "images/nav/my-on.png",

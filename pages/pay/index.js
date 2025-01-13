@@ -156,21 +156,21 @@ Page({
   },
   goCreateOrder(){
     if (this.data.submitLoding) return
-    const mobile = this.data.mobile
-    if (this.data.peisongType == 'zq' && !mobile) {
-      wx.showToast({
-        title: this.data.$t.pay.inputphoneNO,
-        icon: 'none'
-      })
-      return
-    }
-    if (!this.data.diningTime && this.data.create_order_select_time == '1') {
-      wx.showToast({
-        title: this.data.$t.pay.select,
-        icon: 'none'
-      })
-      return
-    }
+    // const mobile = this.data.mobile
+    // if (this.data.peisongType == 'zq' && !mobile) {
+    //   wx.showToast({
+    //     title: this.data.$t.pay.inputphoneNO,
+    //     icon: 'none'
+    //   })
+    //   return
+    // }
+    // if (!this.data.diningTime && this.data.create_order_select_time == '1') {
+    //   wx.showToast({
+    //     title: this.data.$t.pay.select,
+    //     icon: 'none'
+    //   })
+    //   return
+    // }
     this.setData({
       submitLoding: true
     })
@@ -212,15 +212,15 @@ Page({
       isCanHx: true
     }
     if (this.data.shopInfo) {
-      if (!this.data.shopInfo.openWaimai && !this.data.shopInfo.openZiqu) {
-        wx.showModal({
-          confirmText: this.data.$t.common.confirm,
-          cancelText: this.data.$t.common.cancel,
-          content: this.data.$t.pay.servicesclosed,
-          showCancel: false
-        })
-        return;
-      }
+      // if (!this.data.shopInfo.openWaimai && !this.data.shopInfo.openZiqu) {
+      //   wx.showModal({
+      //     confirmText: this.data.$t.common.confirm,
+      //     cancelText: this.data.$t.common.cancel,
+      //     content: this.data.$t.pay.servicesclosed,
+      //     showCancel: false
+      //   })
+      //   return;
+      // }
       postData.shopIdZt = this.data.shopInfo.id
       postData.shopNameZt = this.data.shopInfo.name
     }
