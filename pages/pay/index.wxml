@@ -27,7 +27,7 @@
 			</view>
 		</view>
 	</view>
-	<!-- <van-field
+	<van-field
 		wx:if="{{peisongType == 'zq'}}"
     model:value="{{ mobile }}"
     label="{{ $t.booking.mobile }}"
@@ -36,7 +36,7 @@
 		focus
     placeholder="{{ $t.pay.inputphoneNO }}">
 		<van-button slot="button" size="small" type="danger" open-type="getPhoneNumber" bind:getphonenumber="getPhoneNumber">{{ $t.pay.reBind }}</van-button>
-  </van-field> -->
+  </van-field>
 	<!-- <van-cell
     wx:if="{{ create_order_select_time == '1' }}"
 	 	title="{{ peisongType == 'zq' ? $t.pay.Mealtime : $t.pay.Deliverytime }}"
@@ -44,7 +44,7 @@
 		is-link
 		bind:click="diningTimeShow"
 	/> -->
-	<!-- <van-divider dashed /> -->
+	<van-divider dashed />
 </view>
 
 <view class="goods-title">{{ $t.pay.Productdetails }}</view>

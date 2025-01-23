@@ -156,6 +156,7 @@ Page({
   },
   goCreateOrder(){
     if (this.data.submitLoding) return
+    // chu: phone is optional
     // const mobile = this.data.mobile
     // if (this.data.peisongType == 'zq' && !mobile) {
     //   wx.showToast({
