@@ -94,7 +94,7 @@ Page({
     extJsonStr['用餐人数'] = this.data.persionNum['zh_CN'][this.data.persionNumIndex]
     const res = await WXAPI.yuyueJoin({
       token: wx.getStorageSync('token'),
-      yuyueId: wx.getStorageSync('zxdz'),
+      yuyueId: "2232" ,//wx.getStorageSync('zxdz'), // chu: use own id
       extJsonStr: JSON.stringify(extJsonStr)
     })
     if (res.code != 0) {
